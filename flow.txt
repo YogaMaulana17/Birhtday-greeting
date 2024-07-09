@@ -1,0 +1,10 @@
+Buat Form ultah
+> buat dulu halaman login(Verifikasi)
+> style halaman login
+> buat halaman baru untuk greeting
+> ambil data Nama dan tanggal pake js
+> kreasikan
+
+note
+https://www.niagahoster.co.id/blog/membuat-form-login/ (referensi)
+Musik by : https://suno.com/song/7ee2d3ed-58d8-4a7f-96ad-433ea49477aa
