@@ -12,6 +12,9 @@
     <link rel="stylesheet" href="asset/greeting.css">
     <!-- animasi -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- icon -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
 
 <body>
@@ -123,6 +126,12 @@
                 </article>
             </section>
         </section>
+
+        <div class="pesan" data-aos="fade-up" data-aos-duration="1000">
+            <p>Pencet itu nya
+                <i onclick="alert()" class="material-symbols-sharp"> favorite </i>
+            </p>
+        </div>
     </main>
 
     <!-- custom js -->
@@ -166,7 +175,8 @@
             backSpeed: 210,
             showCursor: false,
             loop: true
-        }); var typed = new Typed('.title6', {
+        });
+        var typed = new Typed('.title6', {
             strings: ['Harga Diri dan Percaya Diri'],
             typeSpeed: 180,
             backSpeed: 210,
@@ -177,6 +187,42 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
+    </script>
+    <!-- sweetalert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script>
+        function alert() {
+            swal.fire({
+                title: "SELAMAT ULANG TAHUN",
+                text: "Di tanggal ini kamu untuk pertama kalinya menghirup udara, menangis dan membukakan mata di dunia. \n Selalu bersyukur itu yang harus selalu kamu lakukan. \n Semoga di tahun ini target, cita-cita, keinginan dan harapan kamu bisa terkabul dan semoga kamu panjang umur sehat selalu.",
+                width: 600,
+                background: "#E5E1DA",
+                backdrop: `rgba(0,0,123,0.4)
+                           url("asset/img/nyan-cat-nyan.gif")
+                           bottom center
+                           repeat`,
+                showCancelButton: true,
+                confirmButtonColor: "#3085d6",
+                cancelButtonColor: "#d33",
+                confirmButtonText: "Kamu suka ini?",
+                cancelButtonText: "Tidak"
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    Swal.fire({
+                        title: "Terimakasih Banyak😁",
+                        background: "#E5E1DA",
+                        icon: "success"
+                    });
+
+                } else {
+                    Swal.fire({
+                        title: "maaf yaa nggk bagus\n 👉👈",
+                        background: "#E5E1DA"
+                    });
+                };
+            });
+        }
     </script>
 </body>
 
