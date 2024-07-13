@@ -147,6 +147,22 @@ article:has(:hover, :focus) {
     rgba(0, 0, 0, 0.06) 0px 0px 0px 1px; */
 }
 
+.pesan {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  color: rgb(56, 56, 56);
+  background: white;
+  font-weight: bold;
+  font-size: 1.5em;
+  padding: 50px 30px;
+  margin: 40px 20px;
+  border-radius: 20px;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.123);
+}
+.pesan p i {
+  animation: kenyal 2s ease infinite;
+}
 @media screen and (max-width: 960px) {
   article {
     container: card/inline-size;
@@ -168,6 +184,10 @@ article:has(:hover, :focus) {
   }
   .articles {
     margin-top: -2.5em;
+  }
+  .pesan {
+    flex-direction: column;
+    align-items: center;
   }
 }
 @container card (min-width: 380px) {
